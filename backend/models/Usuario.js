@@ -7,12 +7,12 @@ const usuarioShema = mongoose.Schema({
   nombre: {
     type: String,
     required: true,
-    trim: true,
+    trim: true,//Elimina espacios en blanco luego del último dato ingresado
   },
   email: {
     type: String,
     required: true,
-    unique: true,
+    unique: true,//El email es único para cada usuario
     trim: true,
   },
   password: {
